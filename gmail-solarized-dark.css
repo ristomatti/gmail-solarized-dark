@@ -1,0 +1,85 @@
+@-moz-document url-prefix("https://mail.google.com") {
+/**
+* Gmail Solarized Dark Grey v0.1a (2016-05-06)
+*
+* The MIT License (MIT) https://opensource.org/licenses/MIT
+*
+* (c) 2016 Ristomatti Airo <ristomatti@kallio.io>
+*/
+
+/* Basic Bodies */
+html,
+body {
+	background: none #141414 !important;
+}
+
+/* Make descendents of the body element transparent.  Formerly "DIV + SPAN" rules. */
+div *:not([class*="at"]) {
+	background-color: transparent !important;
+}
+
+/* Make descendents of the body element transparent.  Formerly "DIV + SPAN" rules. */
+span * {
+	background-color: transparent !important;
+}
+
+/* Give id's BG hopefully */
+div[id] {
+	background-color: inherit !important;
+}
+
+/* Filter non-icons */
+span:not(:empty):not([class*="icon"]):not([id*="icon"]):not([class*="star"]):not([id*="star"]):not([id*="rating"]):not([class*="rating"]):not([class*="prite"]) {
+	background: none transparent !important;
+}
+
+*:not([class*="at"]):not([class*="av"]):not([role*="button"]):not([class*="y2"]) {
+	color: #93a1a1 !important;
+	border-color: #444 !important;
+	outline-color: #444 !important;
+	text-shadow: none !important;
+}
+
+div[role="button"] {
+	background-image: none;
+	background-color: #222 !important;
+	border-color: #444 !important;
+	color: #93a1a1 !important;
+}
+
+/* Link */
+a:link,
+a:link *:not(img) {
+	color: #B1CBF7 !important;
+	background-color: transparent !important;
+	border-color: #666 !important;
+}
+
+a:visited,
+a:visited * {
+	color: #CDB4E7 !important;
+}
+
+a:hover,
+a:hover *:not(img) {
+	color: #FFE900 !important;
+	background-color: #363037 !important;
+	border-color: #999 !important;
+}
+
+
+/* popups (menus, tooltips, etc) */
+div.SK.ZF-zT,
+div[role="menu"],
+div[role="tooltip"],
+div[role="alertdialog"],
+div[role="dialog"] {
+	background-color: #212121 !important;
+}
+
+/* modals with solid background */
+div.modal-dialog,
+div.modal-dialog-bg {
+	background: inherit !important;
+}
+}
