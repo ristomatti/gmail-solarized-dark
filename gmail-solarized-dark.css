@@ -1,4 +1,4 @@
-@-moz-document url-prefix("https://mail.google.com") {
+@-moz-document url-prefix("https://mail.google.com"), url-prefix("https://calendar.google.com/calendar/mgadget?container=gm") {
 /**
 * Gmail Solarized Dark Grey v0.1a (2016-05-06)
 *
@@ -13,12 +13,12 @@ body {
 	background: none #141414 !important;
 }
 
-/* Make descendents of the body element transparent.  Formerly "DIV + SPAN" rules. */
-div *:not([class*="at"]) {
+/* Make descendents of the body element transparent. */
+div *:not([class*="at"]):not([class*="aio"]):not([class*="p6"]) {
 	background-color: transparent !important;
 }
 
-/* Make descendents of the body element transparent.  Formerly "DIV + SPAN" rules. */
+/* Make descendents of the body element transparent. */
 span * {
 	background-color: transparent !important;
 }
@@ -33,7 +33,7 @@ span:not(:empty):not([class*="icon"]):not([id*="icon"]):not([class*="star"]):not
 	background: none transparent !important;
 }
 
-*:not([class*="at"]):not([class*="av"]):not([role*="button"]):not([class*="y2"]) {
+*:not([class*="at"]):not([class*="av"]):not([role*="button"]):not([class*="y2"]):not([class*="nL"]):not([class*="p6"]) {
 	color: #93a1a1 !important;
 	border-color: #444 !important;
 	outline-color: #444 !important;
@@ -67,7 +67,6 @@ a:hover *:not(img) {
 	border-color: #999 !important;
 }
 
-
 /* popups (menus, tooltips, etc) */
 div.SK.ZF-zT,
 div[role="menu"],
@@ -82,4 +81,10 @@ div.modal-dialog,
 div.modal-dialog-bg {
 	background: inherit !important;
 }
+
+/* Calendar gadget */
+.calendar-container * {
+	background-color: transparent !important;
+}
+
 }
