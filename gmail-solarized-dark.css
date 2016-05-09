@@ -33,7 +33,7 @@ span:not(:empty):not([class*="icon"]):not([id*="icon"]):not([class*="star"]):not
 	background: none transparent !important;
 }
 
-*:not([class*="at"]):not([class*="av"]):not([role*="button"]):not([class*="y2"]):not([class*="nL"]):not([class*="p6"]) {
+*:not([class*="at"]):not([class*="av"]):not([role*="button"]):not([class*="y2"]):not([class*="nL"]):not([class*="p6"]):not([data-saferedirecturl]) {
 	color: #93a1a1 !important;
 	border-color: #444 !important;
 	outline-color: #444 !important;
@@ -50,14 +50,14 @@ div[role="button"] {
 /* Link */
 a:link,
 a:link *:not(img) {
-	color: #B1CBF7 !important;
+	color: #cb4b16 !important;
 	background-color: transparent !important;
 	border-color: #666 !important;
 }
 
 a:visited,
 a:visited * {
-	color: #CDB4E7 !important;
+	color: #b58900 !important;
 }
 
 a:hover,
