@@ -14,12 +14,12 @@ body {
 }
 
 /* Make descendents of the body element transparent. */
-div *:not([class*="at"]):not([class*="aio"]):not([class*="p6"]):not([class*="SK"]):not([role*="dialog"]):not([role*="menu"]):not([aria-expanded="true"]):not([aria-haspopup]) {
+div *:not([class*="at"]):not([class*="aio"]):not([class*="p6"]):not([class*="SK"]):not([role*="dialog"]):not([role*="menu"]):not([aria-expanded="true"]):not([aria-haspopup]):not([title*="RGB"]):not([class*="aH5"]) {
 	background-color: transparent !important;
 }
 
 /* Make descendents of the body element transparent. */
-span * {
+span *:not([class*="aH5"]) {
 	background-color: transparent !important;
 }
 
@@ -29,7 +29,7 @@ div[id] {
 }
 
 /* Filter non-icons */
-span:not(:empty):not([class*="icon"]):not([id*="icon"]):not([class*="star"]):not([id*="star"]):not([id*="rating"]):not([class*="rating"]):not([class*="sprite"]):not([class*="gb_"]) {
+span:not(:empty):not([class*="icon"]):not([id*="icon"]):not([class*="star"]):not([id*="star"]):not([id*="rating"]):not([class*="rating"]):not([class*="sprite"]):not([class*="gb_"]):not([class*="aH5"]) {
 	background: none transparent !important;
 }
 
