@@ -1,6 +1,6 @@
 @-moz-document url-prefix("https://mail.google.com"), url-prefix("https://calendar.google.com/calendar/mgadget?container=gm") {
 /**
-* Gmail Solarized Dark Grey v0.1a (2016-05-06)
+* Gmail Solarized Dark Grey v0.4a (2016-05-10)
 *
 * The MIT License (MIT) https://opensource.org/licenses/MIT
 *
@@ -14,7 +14,7 @@ body {
 }
 
 /* Make descendents of the body element transparent. */
-div *:not([class*="at"]):not([class*="aio"]):not([class*="p6"]):not([role*="dialog"]) {
+div *:not([class*="at"]):not([class*="aio"]):not([class*="p6"]):not([role*="dialog"]):not([role*="menu"]):not([aria-expanded="true"]) {
 	background-color: transparent !important;
 }
 
@@ -86,5 +86,4 @@ div.modal-dialog-bg {
 .calendar-container * {
 	background-color: transparent !important;
 }
-
 }
