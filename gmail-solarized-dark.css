@@ -14,7 +14,7 @@ body {
 }
 
 /* Make descendents of the body element transparent. */
-div *:not([class*="at"]):not([class*="aio"]):not([class*="p6"]) {
+div *:not([class*="at"]):not([class*="aio"]):not([class*="p6"]):not([role*="dialog"]) {
 	background-color: transparent !important;
 }
 
@@ -25,11 +25,11 @@ span * {
 
 /* Give id's BG hopefully */
 div[id] {
-	background-color: inherit !important;
+	background-color: #212121 !important;
 }
 
 /* Filter non-icons */
-span:not(:empty):not([class*="icon"]):not([id*="icon"]):not([class*="star"]):not([id*="star"]):not([id*="rating"]):not([class*="rating"]):not([class*="prite"]) {
+span:not(:empty):not([class*="icon"]):not([id*="icon"]):not([class*="star"]):not([id*="star"]):not([id*="rating"]):not([class*="rating"]):not([class*="sprite"]) {
 	background: none transparent !important;
 }
 
