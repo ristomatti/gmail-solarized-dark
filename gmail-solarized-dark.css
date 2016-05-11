@@ -1,6 +1,6 @@
 @-moz-document url-prefix("https://mail.google.com"), url-prefix("https://calendar.google.com/calendar/mgadget?container=gm") {
 /**
-* Gmail Solarized Dark Grey v0.6b (2016-05-10)
+* Gmail Solarized Dark Grey v0.7b (2016-05-10)
 *
 * The MIT License (MIT) https://opensource.org/licenses/MIT
 *
@@ -14,7 +14,7 @@ body {
 }
 
 /* Make descendents of the body element transparent. */
-div *:not([class*="at"]):not([class*="aio"]):not([class*="p6"]):not([class*="SK"]):not([role*="dialog"]):not([role*="menu"]):not([aria-expanded="true"]):not([aria-haspopup]):not([title*="RGB"]):not([class*="aH5"]):not([class*="-popup"]) {
+div *:not([class*="at"]):not([class*="aio"]):not([class*="p6"]):not([class*="SK"]):not([role*="dialog"]):not([role*="menu"]):not([aria-expanded="true"]):not([aria-haspopup]):not([title*="RGB"]):not([class*="aH5"]):not([class*="-popup"]):not([role="option"]):not([role="listbox"]) {
 	background-color: transparent !important;
 }
 
@@ -26,6 +26,14 @@ span *:not([class*="aH5"]) {
 /* Give id's BG hopefully */
 div[id] {
 	background-color: #212121 !important;
+}
+
+div[id][role="option"] {
+   background-color: #212121 !important;
+}
+
+div[id][role="option"]:hover {
+   background-color: #3A3A3A !important;
 }
 
 /* Filter non-icons */
