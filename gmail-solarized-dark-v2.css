@@ -1,0 +1,77 @@
+@-moz-document domain("mail.google.com") {
+/* main search box */
+#gbqfqw {
+	border: 1px solid #3a3a3a;
+	background: #212121;	
+	color: #93a1a1;
+}
+
+/* buttons, input fields */
+input[type="text"],
+textarea,
+[role="button"] {
+	background: #212121 !important;
+	color: #93a1a1 !important;
+}
+
+/* message area surrounding area */
+table[role="presentation"] * {
+	background-color: #141414 !important;
+	border-color: #3a3a3a !important;
+	color: #93a1a1;
+}
+
+/* message area */
+.AO {
+	background-color: #141414;	
+	color: #93a1a1;
+}
+
+/* message edit toolbar */
+[role="toolbar"] * {
+	background-color: #3a3a3a !important;
+	color: #fff;
+	border: 1px solid #212121;
+}
+
+/* popup menus */
+[role="menu"],
+[role="menuitem"],
+[role="menuitem"] * {
+	background: #212121 !important;
+	color: #93a1a1 !important;
+}
+
+/* ad sections */
+table[role="presentation"] div[role="complementary"] {
+	display: none;
+}
+
+/* left navigation links */
+[role="navigation"] a,
+[role="navigation"] a:visited,
+[role="navigation"] a:hover {
+	color: #93a1a1 !important;
+}
+
+/* links */
+a {
+	color: #eee8d5 !important;
+}
+a:visited {
+	color: #93a1a1 !important; /* magenta */
+}
+a:hover {
+	color: #cb4b16 !important; /* orange */
+}
+
+
+}
+
+@-moz-document url-prefix("https://calendar.google.com/calendar/mgadget") {
+/* Calendar gadget */
+.calendar-container * {
+	color: #93a1a1;
+	background-color: transparent !important;
+}
+}
